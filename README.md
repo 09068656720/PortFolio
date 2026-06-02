@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built with React. This project showcases my skills, projects, and contact information in a clean and interactive user interface.
 
-Currently, two official plugins are available:
+Features
+Responsive design for desktop, tablet, and mobile devices
+Modern dark-themed UI
+Smooth navigation between sections
+Hero section with call-to-action buttons
+About Me section
+Skills showcase
+Featured projects section
+Contact form
+Interactive hover effects and animations
+Built with reusable React components
+🛠️ Technologies Used
+React
+JavaScript (ES6+)
+Vite
+HTML5
+CSS3
+ Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+src/
+├── assets/
+│ └── Meme.jpeg
+├── App.tsx
+├── main.tsx
+└── index.css
 
-## React Compiler
+Getting Started
+Clone the repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+git clone https://github.com/09068656720/PortFolio
 
-## Expanding the ESLint configuration
+Navigate into the project folder
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+cd PortFolio
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Install dependencies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Start the development server
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The application will be available at:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+http://localhost:5173
+
+Sections Included
+Home
+
+Introduction and call-to-action buttons.
+
+About
+
+Personal introduction and background.
+
+Skills
+
+Displays technical skills and competencies.
+
+Projects
+
+Highlights featured projects with descriptions.
+
+Contact
+
+Allows visitors to send messages and connect.
+
+Future Improvements
+Add project screenshots
+Integrate email functionality with EmailJS
+Add Framer Motion animations
+Add downloadable CV
+Add dark/light mode toggle
+Connect contact form to a backend service
+Author
+
+Abdullahi Kamaludeen
+
+Frontend Developer passionate about building modern, responsive, and user-friendly web applications.

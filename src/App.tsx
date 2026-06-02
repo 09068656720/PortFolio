@@ -89,28 +89,30 @@ export default function App()  {
 
       {/* Skills */}
       <section id="skills" className="py-28 px-6">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-16">
             My <span className="text-cyan-400">Skills</span>
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "React",
-              "Git",
-              "Responsive Design",
-            ].map((skill) => (
-              <div
-                key={skill}
-                className="bg-zinc-900 border border-gray-800 rounded-2xl p-8 hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-lg"
-              >
-                <h3 className="text-xl font-semibold">{skill}</h3>
-              </div>
-            ))}
-          </div>
+
+
+            <div className="flex flex-wrap justify-center gap-8">
+          {[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Git",
+            "Responsive Design",
+          ].map((skill) => (
+            <div
+              key={skill}
+              className="w-64 h-32 flex items-center justify-center bg-zinc-900 border border-gray-800 rounded-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300 shadow-lg"
+            >
+              <h3 className="text-xl font-semibold">{skill}</h3>
+            </div>
+          ))}
+        </div>
         </div>
       </section>
 
@@ -121,7 +123,7 @@ export default function App()  {
             Featured <span className="text-cyan-400">Projects</span>
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="flex flex-wrap justify-center gap-10">
             {[
               {
                 title: "Portfolio Website",
@@ -134,7 +136,7 @@ export default function App()  {
             ].map((project) => (
               <div
                 key={project.title}
-                className="bg-black border border-gray-800 rounded-3xl overflow-hidden hover:border-cyan-400 transition duration-300 group"
+                className="w-full `md:w-95` bg-black border border-gray-800 rounded-3xl overflow-hidden hover:border-cyan-400 transition duration-300 group"
               >
                 <div className="h-56 bg-linear-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center text-2xl font-bold text-cyan-300">
                   {project.title}
@@ -147,7 +149,7 @@ export default function App()  {
 
                   <p className="text-gray-400 leading-7">{project.desc}</p>
 
-                  <button className="mt-6 px-5 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition font-medium">
+                  <button className=" w-full `md:w-95` mt-6 px-5 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition font-medium">
                     Live Demo
                   </button>
                 </div>
